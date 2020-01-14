@@ -1,1 +1,1 @@
-web: java -jar build/libs/Ch-095.backend.jar
+web: java -war build/libs/EventTable-1.0-SNAPSHOT.war
