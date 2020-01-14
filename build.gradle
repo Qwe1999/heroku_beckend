@@ -13,6 +13,10 @@ repositories {
 configurations.all {
     exclude group: "commons-logging", module: "commons-logging"
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
 test{
     useJUnitPlatform()
 }
