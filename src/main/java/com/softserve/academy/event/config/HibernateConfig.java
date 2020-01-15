@@ -44,7 +44,7 @@ public class HibernateConfig {
             log.error(e.getMessage());
             System.exit(1);
         }
-        dataSource.setJdbcUrl(Objects.requireNonNull(environment.getProperty(JDBC_DATABASE_URL)));
+        dataSource.setJdbcUrl(Objects.requireNonNull(environment.getProperty(DATABASE_URL)));
 //         dataSource.setUser(Objects.requireNonNull(environment.getProperty(USER)));
 //         dataSource.setPassword(Objects.requireNonNull(environment.getProperty(PASS)));
         return dataSource;
